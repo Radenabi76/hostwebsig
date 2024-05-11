@@ -1,0 +1,165 @@
+* {
+  font-family: poppins;
+}
+header {
+  width: 100vw;
+  background-color: aliceblue;
+  text-align: center;
+  align-items: center;
+}
+/* Style untuk judul dan navbar */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Warna latar belakang */
+  z-index: 1000; /* Z-index agar tetap di atas konten */
+}
+
+/* Style untuk section */
+section {
+  margin-top: 100px; /* Menyesuaikan margin atas agar konten tidak tertutup oleh header */
+}
+
+.title {
+  width: 100vw;
+  position: sticky;
+  height: 100px;
+  font-size: 32px;
+  background-color: #333;
+  display: flex; /* Set display property to flex */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically (optional, if needed) */
+  color: white; /* Change text color to enhance visibility */
+}
+
+body {
+  margin: 0px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 60px;
+  background-color: bisque;
+}
+
+.navbar nav ul {
+  display: flex;
+  justify-content: space-around; /* Ini akan memastikan tautan berada di sepanjang baris dengan jarak yang sama */
+  list-style: none;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333; /* Warna tautan */
+  padding: 10px 15px; /* Padding untuk tautan */
+  border-radius: 5px; /* Bentuk sudut */
+  transition: background-color 0.3s ease; /* Efek transisi ketika tautan dihover */
+}
+
+.navbar nav ul li a:hover {
+  background-color: #796544;
+  color: #ffffff; /* Warna latar belakang saat tautan dihover */
+}
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+/* Style the dropdown button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #515151;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #796544;
+  color: #ffffff;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Warna latar belakang */
+  transition: all ease-in-out 0.3s;
+}
+
+.judul {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+section {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.card:hover {
+  background-color: #848484;
+}
+footer {
+  background-color: #333; /* warna latar belakang */
+  color: #fff; /* warna teks */
+  padding: 20px; /* jarak antara konten dan batas */
+  text-align: center; /* ratakan teks ke tengah */
+  position: fixed; /* tetap di bagian bawah layar */
+  left: 0; /* memulai dari sisi kiri */
+  bottom: 0; /* memulai dari bagian bawah */
+  width: 100%; /* lebar 100% */
+}
+footer {
+  background-color: #333; /* warna latar belakang */
+  color: #fff; /* warna teks */
+  padding: 20px; /* jarak antara konten dan batas */
+  text-align: center; /* ratakan teks ke tengah */
+  left: 0; /* memulai dari sisi kiri */
+  bottom: 0; /* memulai dari bagian bawah */
+  width: 100%; /* lebar 100% */
+}
